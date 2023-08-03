@@ -9,7 +9,11 @@ contributes:
       filters:
         - nws.lua
     pdf:
+      documentclass: nws
       include-in-header: header.tex
+      template-partials: "partials/before-body.tex"
+      format-resources:
+        - nws.cls
     html:
       css: styles.css
 
